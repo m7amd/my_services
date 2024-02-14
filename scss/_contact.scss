@@ -1,0 +1,39 @@
+.contact {
+  overflow: hidden;
+  .container {
+    padding: 60px;
+    background-color: $white;
+    box-shadow: 3px 3px 20px rgb(0, 0, 0,0.2);
+    .flexx {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: row wrap;
+      gap: 40px;
+      .form {
+        flex: 1;
+        form {
+          direction: rtl;
+          input {
+            height: 40px;
+          }
+          input, textarea {
+            display: block;
+            border: 1px solid rgb(214, 214, 214);
+            outline: none;
+            width: 500px;
+            padding: 22px 10px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            resize: none;
+            color: $dark;
+          }
+          button {
+            background-color: $purple !important;
+            border: 1px solid $purple !important;
+          }
+        }
+      }
+    }
+  }
+}

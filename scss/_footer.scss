@@ -1,0 +1,33 @@
+.footer {
+  overflow: hidden;
+  background-color: $dark;
+  margin-top: 150px;
+  padding: 40px;
+  .flexx {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    .logo {
+      flex: 1;
+    }
+    .social {
+      flex: 3;
+      display: flex;
+      justify-content: end;
+      align-items: center; 
+      gap: 30px;
+      i {
+        color: $white !important;
+        font-size: 30px !important;
+      }
+    }
+  }
+  .copyright {
+    display: flex;
+    justify-content: center;
+    color: $white;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+}

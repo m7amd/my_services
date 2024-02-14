@@ -1,0 +1,76 @@
+// Files
+@import 'colors';
+@import 'nav';
+@import 'hero';
+@import 'services';
+@import 'about-us';
+@import 'adv';
+@import 'contact';
+@import 'footer';
+@import 'whatsapp';
+
+// Main Setting 
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Kufi Arabic', sans-serif !important;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pd {
+  padding: 200px 0;
+}
+
+::selection {
+  color: $white;
+  background-color: $purple;
+}
+
+// SCroll To Top 
+
+.scroll-to-top {
+  position: fixed;
+  z-index: 999;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 55px;
+  border-radius: 50%; 
+  background-color: $purple;
+  color: $white;
+  transition: .3s;
+  cursor: pointer;
+  display: none;
+  .arrow {
+    font-size: 21px;
+  }
+  &:hover {
+    background-color: #FFF;
+    border: 1px solid $purple !important;
+    color: $purple !important;
+  } 
+}
+.scroll-to-top:hover .arrow {
+  color: $purple;
+}

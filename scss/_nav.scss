@@ -1,0 +1,79 @@
+nav {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: $dark;
+  overflow-x: hidden;
+  .nav {
+    padding: 1px 10px;  
+    .navbar-brand {
+      margin: 0;
+    }
+    .navbar-toggler {
+      background-color: $white;
+      border: none !important;
+      outline: none !important;
+    }
+    .links {
+      justify-content: flex-end;
+      a {
+        color: $white !important;
+        font-weight: bold;
+        font-size: 17px;
+      }
+    }
+    .line {
+      position: relative;
+      left: 0;
+      bottom: -1px;
+      background-color: $white;
+      display: block;
+      width: 2px;
+      z-index: 99;
+      height: 41px;
+    }
+    .moon {
+      display: inline-block;
+      position: relative;
+      top: 9px;
+      right: 100px;
+      font-size: 28px;
+      cursor: pointer;
+      color: $white;
+      transition: .3s;
+      &:hover {
+        color: $purple;
+        &::after {
+          transition: .8s;
+          background-color: $purple;
+          opacity: 1;
+        }
+      }
+      &::after {
+        content: '';
+        background-color: $white;
+        width: 24px;
+        height: 2px;
+        position: absolute;
+        bottom: -3px;
+        left: -2px;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 991px) {
+  .links {
+    padding-top: 30px;
+  }
+  .line {
+    display: none !important;
+  }
+  .moon {
+    top: -4px !important;
+    right: 95% !important;
+  }
+}

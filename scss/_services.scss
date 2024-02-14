@@ -1,0 +1,20 @@
+.services {
+  overflow: hidden;
+  .title {
+    color: $dark !important;
+  }
+  .container {
+    padding: 60px;
+    background-color: $white;
+    box-shadow: 3px 3px 20px rgb(0, 0, 0,0.2);
+    .row {
+      gap: 60px  0 !important; 
+      .card-body {
+        flex: 1 1 230px;
+        .card-title {
+          color: $purple;
+        }
+      }
+    }
+  }
+}

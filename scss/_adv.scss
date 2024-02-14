@@ -1,0 +1,19 @@
+.adv {
+  overflow-x: hidden;
+  .container {
+    padding: 60px;
+    background-color: $white;
+    box-shadow: 3px 3px 20px rgb(0, 0, 0,0.2);
+    .card-body {
+      flex: 1 1 255px !important; 
+      text-align: center !important;
+      .card-title {
+        color: $purple;
+      }
+      i {
+        font-size: 40px !important;
+        color: $purple;
+      }
+    }
+  }
+}

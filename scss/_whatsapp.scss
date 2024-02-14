@@ -1,0 +1,10 @@
+.qr {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-top: 100px !important;
+  flex-direction: column;
+  .title {
+    margin-top: 50px !important;
+  }
+}
