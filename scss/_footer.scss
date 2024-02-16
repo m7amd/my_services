@@ -4,7 +4,9 @@
   margin-top: 150px;
   padding: 40px;
   .flexx {
+    text-align: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     gap: 50px;
@@ -20,6 +22,11 @@
       i {
         color: $white !important;
         font-size: 30px !important;
+        transition: .2s;
+        &:hover {
+          color: $purple !important;
+          transform: rotate(360deg);
+        }
       }
     }
   }
@@ -29,5 +36,14 @@
     color: $white;
     font-weight: bold;
     margin-top: 50px;
+  }
+}
+
+
+@media (max-width:576px) {
+  .footer {
+    .social {
+      justify-content: center;
+    }
   }
 }

@@ -8,12 +8,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-wrap: row wrap;
+      flex-wrap: wrap;
       gap: 40px;
       .form {
         flex: 1;
         form {
-          direction: rtl;
           input {
             height: 40px;
           }
@@ -33,6 +32,21 @@
             border: 1px solid $purple !important;
           }
         }
+      }
+      .img {
+        text-align: center;
+        flex: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: 1399px) {
+  .contact {
+    .form {
+      text-align: center;
+      input, textarea {
+        margin: 0 auto;
       }
     }
   }

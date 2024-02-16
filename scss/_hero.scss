@@ -1,26 +1,31 @@
 .hero {
+  min-height: calc(100vh - 82px) !important;
+  background-image: url('../img/8.jpg');
+  background-position: center;
+  background-size: cover;
   position: relative;
   overflow-x: hidden !important;
-  .flex {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    .img {
-      .text {
-        color: $white;
-        position: absolute;
-        right: 17%;
-        bottom: 50%;
-        .boton {
-          background-color: $purple;
-          border: 1px solid $purple;
-          transition: .3s;
-          &:hover {
-            background-color: transparent;
-            border: 1px solid $purple;
-          }
-        }
+  .text {
+    color: $white;
+    position: absolute;
+    right: 17%;
+    bottom: 50%;
+    .boton {
+      background-color: $purple;
+      border: 1px solid $purple;
+      transition: .3s;
+      &:hover {
+        background-color: transparent;
+        border: 1px solid $purple;
       }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .hero {
+    .lead {
+      width: 50%;
     }
   }
 }

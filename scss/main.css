@@ -1,8 +1,4 @@
 nav {
-  position: fixed !important;
-  top: 0;
-  width: 100%;
-  z-index: 9999;
   background-color: #242526;
   overflow-x: hidden;
 }
@@ -77,30 +73,34 @@ nav .nav .moon::after {
   }
 }
 .hero {
+  min-height: calc(100vh - 82px) !important;
+  background-image: url("../img/8.jpg");
+  background-position: center;
+  background-size: cover;
   position: relative;
   overflow-x: hidden !important;
 }
-.hero .flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.hero .flex .img .text {
+.hero .text {
   color: #FFF;
   position: absolute;
   right: 17%;
   bottom: 50%;
 }
-.hero .flex .img .text .boton {
+.hero .text .boton {
   background-color: #7c4ab6;
   border: 1px solid #7c4ab6;
   transition: 0.3s;
 }
-.hero .flex .img .text .boton:hover {
+.hero .text .boton:hover {
   background-color: transparent;
   border: 1px solid #7c4ab6;
 }
 
+@media (min-width: 992px) {
+  .hero .lead {
+    width: 50%;
+  }
+}
 .services {
   overflow: hidden;
 }
@@ -122,37 +122,53 @@ nav .nav .moon::after {
   color: #7c4ab6;
 }
 
+@media (min-width: 57px) and (max-width: 767px) {
+  .services .card-body {
+    flex: 1 1 auto !important;
+  }
+}
+.about-us .title::before {
+  left: 47%;
+  width: 6%;
+}
 .about-us .flexx {
   display: flex;
-  flex-direction: column;
-  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
 }
 .about-us .flexx .img {
   flex: 1;
-  text-align: end;
 }
 .about-us .flexx .text {
   width: 400px;
   flex: 1;
   display: flex;
-  flex-direction: row wrap;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 20px;
 }
-.about-us .flexx .text .card-body {
-  justify-content: center;
-  align-self: center;
-  flex: 1 1 113px !important;
-  width: 200px;
-  text-align: center;
+.about-us .flexx .text .card {
   transition: 0.3s;
 }
-.about-us .flexx .text .card-body:hover {
+.about-us .flexx .text .card .card-body {
+  justify-content: center;
+  align-self: center;
+  flex: 1 1 auto !important;
+  text-align: center;
+}
+.about-us .flexx .text .card:hover {
   background-color: #7c4ab6;
   color: #FFF;
 }
 
+@media (max-width: 767px) {
+  .about-us .card {
+    width: 200px !important;
+  }
+}
 .adv {
   overflow-x: hidden;
 }
@@ -161,8 +177,12 @@ nav .nav .moon::after {
   background-color: #FFF;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
 }
+.adv .container .title::before {
+  left: 45%;
+  width: 10%;
+}
 .adv .container .card-body {
-  flex: 1 1 255px !important;
+  flex: 1 1 300px !important;
   text-align: center !important;
 }
 .adv .container .card-body .card-title {
@@ -173,6 +193,22 @@ nav .nav .moon::after {
   color: #7c4ab6;
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .adv .container .card-body {
+    flex: 1 1 345px !important;
+  }
+  .adv .container .card-body .card-text {
+    font-size: 17px !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .adv .container .card-body {
+    flex: 1 1 auto !important;
+  }
+  .adv .container .card-body .card-text {
+    font-size: 18px !important;
+  }
+}
 .contact {
   overflow: hidden;
 }
@@ -185,14 +221,11 @@ nav .nav .moon::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: row wrap;
+  flex-wrap: wrap;
   gap: 40px;
 }
 .contact .container .flexx .form {
   flex: 1;
-}
-.contact .container .flexx .form form {
-  direction: rtl;
 }
 .contact .container .flexx .form form input {
   height: 40px;
@@ -212,7 +245,19 @@ nav .nav .moon::after {
   background-color: #7c4ab6 !important;
   border: 1px solid #7c4ab6 !important;
 }
+.contact .container .flexx .img {
+  text-align: center;
+  flex: 1;
+}
 
+@media (max-width: 1399px) {
+  .contact .form {
+    text-align: center;
+  }
+  .contact .form input, .contact .form textarea {
+    margin: 0 auto;
+  }
+}
 .footer {
   overflow: hidden;
   background-color: #242526;
@@ -220,7 +265,9 @@ nav .nav .moon::after {
   padding: 40px;
 }
 .footer .flexx {
+  text-align: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 50px;
@@ -238,6 +285,11 @@ nav .nav .moon::after {
 .footer .flexx .social i {
   color: #FFF !important;
   font-size: 30px !important;
+  transition: 0.2s;
+}
+.footer .flexx .social i:hover {
+  color: #7c4ab6 !important;
+  transform: rotate(360deg);
 }
 .footer .copyright {
   display: flex;
@@ -247,6 +299,11 @@ nav .nav .moon::after {
   margin-top: 50px;
 }
 
+@media (max-width: 576px) {
+  .footer .social {
+    justify-content: center;
+  }
+}
 .qr {
   display: flex !important;
   justify-content: center !important;
@@ -256,6 +313,23 @@ nav .nav .moon::after {
 }
 .qr .title {
   margin-top: 50px !important;
+}
+
+.loginForm {
+  padding: 60px;
+  background-color: #FFF;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+  width: 800px;
+  margin: 0 auto;
+}
+.loginForm .form-control:focus {
+  border-color: #7c4ab6 !important;
+  box-shadow: 0 0 0 0.25rem rgba(124, 74, 182, 0.5882352941) !important;
+}
+.loginForm .btn {
+  background-color: #7c4ab6 !important;
+  border: 1px solid #7c4ab6 !important;
+  width: 100%;
 }
 
 html {
@@ -323,4 +397,23 @@ a {
 
 .scroll-to-top:hover .arrow {
   color: #7c4ab6;
+}
+
+.title {
+  position: relative;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 46%;
+  width: 8%;
+  height: 2px;
+  background-color: #7c4ab6;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: all 0.6s ease;
+}
+.title:hover::before {
+  transform: scaleX(1);
 }/*# sourceMappingURL=main.css.map */

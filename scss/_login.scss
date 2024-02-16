@@ -1,0 +1,18 @@
+.loginForm {
+  padding: 60px;
+  background-color: $white;
+  box-shadow: 3px 3px 20px rgb(0, 0, 0,0.2);
+  width: 800px;
+  margin: 0 auto;
+  .form-control {
+    &:focus {
+      border-color: $purple !important;
+      box-shadow: 0 0 0 0.25rem #7c4ab696 !important;    
+    }
+  }
+  .btn {
+    background-color: $purple !important;
+    border: 1px solid $purple !important;
+    width: 100%;
+  }
+}

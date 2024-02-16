@@ -8,6 +8,7 @@
 @import 'contact';
 @import 'footer';
 @import 'whatsapp';
+@import 'login';
 
 // Main Setting 
 
@@ -73,4 +74,23 @@ a {
 }
 .scroll-to-top:hover .arrow {
   color: $purple;
+}
+
+.title {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 46%;
+    width: 8%;
+    height: 2px;
+    background-color: $purple;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: all .6s ease;
+  }
+  &:hover::before {
+    transform: scaleX(1);
+  }
 }

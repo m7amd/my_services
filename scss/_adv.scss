@@ -4,8 +4,14 @@
     padding: 60px;
     background-color: $white;
     box-shadow: 3px 3px 20px rgb(0, 0, 0,0.2);
+    .title {
+      &::before {
+        left: 45%;
+        width: 10%;
+      }
+    }
     .card-body {
-      flex: 1 1 255px !important; 
+      flex: 1 1 300px !important; 
       text-align: center !important;
       .card-title {
         color: $purple;
@@ -16,4 +22,30 @@
       }
     }
   }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .adv {
+    .container {
+      .card-body {
+        flex: 1 1 345px !important;
+        .card-text {
+          font-size: 17px !important;
+        }
+      }
+    }
+  }  
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .adv {
+    .container {
+      .card-body {
+        flex: 1 1 auto !important;
+        .card-text {
+          font-size: 18px !important;
+        }
+      }
+    }
+  }  
 }
