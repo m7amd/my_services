@@ -1,5 +1,5 @@
 nav {
-  background-color: #242526;
+  background-color: transparent;
   overflow-x: hidden;
 }
 nav .nav {
@@ -42,11 +42,11 @@ nav .nav .moon {
   transition: 0.3s;
 }
 nav .nav .moon:hover {
-  color: #7c4ab6;
+  color: #242526;
 }
 nav .nav .moon:hover::after {
   transition: 0.8s;
-  background-color: #7c4ab6;
+  background-color: #242526;
   opacity: 1;
 }
 nav .nav .moon::after {
@@ -74,17 +74,24 @@ nav .nav .moon::after {
 }
 .hero {
   min-height: calc(100vh - 82px) !important;
-  background-image: url("../img/8.jpg");
-  background-position: center;
+  background-image: url("../img/wave.png");
+  background-position: top;
+  background-repeat: no-repeat;
   background-size: cover;
+  z-index: 99;
   position: relative;
   overflow-x: hidden !important;
 }
+.hero svg {
+  width: 174%;
+  height: 1127px;
+}
 .hero .text {
-  color: #FFF;
+  color: #242526 !important;
   position: absolute;
-  right: 17%;
-  bottom: 50%;
+  font-weight: 800 !important;
+  right: 6%;
+  bottom: 35%;
 }
 .hero .text .boton {
   background-color: #7c4ab6;
@@ -153,7 +160,7 @@ nav .nav .moon::after {
 .about-us .flexx .text .card {
   transition: 0.3s;
 }
-.about-us .flexx .text .card .card-body {
+.about-us .flexx .text .card .cardd-body {
   justify-content: center;
   align-self: center;
   flex: 1 1 auto !important;
@@ -276,7 +283,7 @@ nav .nav .moon::after {
   flex: 1;
 }
 .footer .flexx .social {
-  flex: 3;
+  flex: 1;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -291,12 +298,10 @@ nav .nav .moon::after {
   color: #7c4ab6 !important;
   transform: rotate(360deg);
 }
-.footer .copyright {
-  display: flex;
-  justify-content: center;
+.footer .flexx .copyright {
+  flex: 1;
   color: #FFF;
   font-weight: bold;
-  margin-top: 50px;
 }
 
 @media (max-width: 576px) {
@@ -304,29 +309,42 @@ nav .nav .moon::after {
     justify-content: center;
   }
 }
-.qr {
+.whatsapp {
+  background-image: url("../img/wave.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.whatsapp .qr {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  margin-top: 100px !important;
+  margin-top: 60px !important;
   flex-direction: column;
 }
-.qr .title {
+.whatsapp .qr .titlewhats {
   margin-top: 50px !important;
+  color: #FFF !important;
 }
 
-.loginForm {
+.formm {
+  background-image: url("../img/wave.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.formm .loginForm {
   padding: 60px;
   background-color: #FFF;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
   width: 800px;
   margin: 0 auto;
 }
-.loginForm .form-control:focus {
+.formm .loginForm .form-control:focus {
   border-color: #7c4ab6 !important;
   box-shadow: 0 0 0 0.25rem rgba(124, 74, 182, 0.5882352941) !important;
 }
-.loginForm .btn {
+.formm .loginForm .btn {
   background-color: #7c4ab6 !important;
   border: 1px solid #7c4ab6 !important;
   width: 100%;
@@ -343,6 +361,8 @@ html {
 }
 
 body {
+  background-color: #FFF;
+  transition: background-color 0.6s cubic-bezier(0.7, 0, 0.7, 1);
   font-family: "Noto Kufi Arabic", sans-serif !important;
   font-size: 1rem;
   line-height: 1.4;
@@ -416,4 +436,39 @@ a {
 }
 .title:hover::before {
   transform: scaleX(1);
+}
+
+.theme {
+  background-color: #242526;
+}
+.theme .hero .text {
+  color: #FFF !important;
+}
+.theme .title {
+  color: #FFF !important;
+}
+.theme .card {
+  border: 0;
+  border-top: 1px solid #FFF;
+}
+.theme .toggleTheme {
+  background-color: #242526 !important;
+  box-shadow: 3px 3px 20px rgba(255, 255, 255, 0.2) !important;
+}
+.theme .card-body {
+  color: #FFF !important;
+  background-color: #242526 !important;
+}
+.theme .card-body h5 {
+  color: #FFF !important;
+}
+.theme .contact .form input, .theme .contact .form textarea {
+  background-color: #242526 !important;
+  color: #FFF !important;
+}
+.theme .contact .form input ::-moz-placeholder, .theme .contact .form textarea ::-moz-placeholder {
+  color: #FFF !important;
+}
+.theme .contact .form input ::placeholder, .theme .contact .form textarea ::placeholder {
+  color: #FFF !important;
 }/*# sourceMappingURL=main.css.map */

@@ -21,77 +21,78 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
   </head>
-  <body>
-    <!-- Navbar  -->
-
-    <nav class="navbar navbar-expand-lg sticky-top navbar">
-      <div class="container nav">
-        <a class="navbar-brand" href="index.html"
-          ><img
-            src="./img/logo-dark.png"
-            width="200"
-            height="70"
-            draggable="false"
-            alt="خدماتي"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse links" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >الرئيسية</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">الخدمات</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#adv">المزايا</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about-us">من نحن </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">اتصل بنا</a>
-            </li>
-            <span class="line"></span>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html">تسجيل الدخول</a>
-            </li>
-            <li>
-              <i class="fa-solid fa-moon moon"></i>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Navbar  -->
-
+  <body data-theme="#FFF">
     <!-- Hero Section  -->
 
     <section class="hero">
+      <!-- Navbar  -->
+
+      <nav class="navbar navbar-expand-lg sticky-top navbar">
+        <div class="container nav">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="./img/logo-dark.png"
+              width="200"
+              height="70"
+              draggable="false"
+              alt="خدماتي"
+              id="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse links" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >الرئيسية</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">الخدمات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#adv">المزايا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-us">من نحن </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">اتصل بنا</a>
+              </li>
+              <span class="line"></span>
+              <li class="nav-item">
+                <a class="nav-link" href="login.php">تسجيل الدخول</a>
+              </li>
+              <li onclick="toggleTheme()">
+                <i class="fa-solid fa-moon moon" id="dark-Mode"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Navbar  -->
+
       <div class="d-flex justify-content-center align-items-center">
         <div class="text">
           <p class="lead">
             موقع إلكتروني مخصص لتقديم خدمات حكومية متنوعة بسرعة وسهولة. يهدف
-            موقعنا إلى تسهيل الوصول إلى الخدمات الحكومية الضرورية بدون عناء،
-            حيث يمكن لمستخدم الموقع طلب الخدمات وإجراء المعاملات عبر
+            موقعنا إلى تسهيل الوصول إلى الخدمات الحكومية الضرورية بدون عناء، حيث
+            يمكن لمستخدم الموقع طلب الخدمات وإجراء المعاملات عبر
             الإنترنت بكل يسر ويسرع.
           </p>
         </div>
@@ -104,7 +105,7 @@
 
     <section class="services pd" id="services">
       <h2 class="text-center mb-5 title">الخدمات</h2>
-      <div class="container">
+      <div class="container toggleTheme">
         <div class="row row-gap-4">
           <div class="col-md-6 col-lg-4 mb-3 mb-sm-0">
             <div class="card">
@@ -187,8 +188,8 @@
     <!-- Advanges -->
 
     <section class="adv pd" id="adv">
-      <div class="container">
-        <h2 class="text-center mb-5 title">المميزات</h2>
+      <h2 class="text-center mb-5 title">المميزات</h2>
+      <div class="container toggleTheme">
         <div class="row mt-5">
           <div class="col-md-6 col-lg-3 mb-md-4 mb-sm-4">
             <div class="card">
@@ -254,23 +255,23 @@
         <h5 class="mt-5">من خلال موقعنا، نسعى لتحقيق عدة أهداف رئيسية:</h5>
         <div class="flexx">
           <div class="text col-lg-6 col-md-12 mt-5">
-            <div class="col-lg-6  col-md-12 mb-3 mb-sm-0">
+            <div class="col-lg-6 col-md-12 mb-3 mb-sm-0">
               <div class="card">
-                <div class="card-body">
+                <div class="cardd-body">
                   <h5 class="card-title mb-3 mt-3">تبسيط الإجراءات الحكومية</h5>
                 </div>
               </div>
             </div>
             <div class="col-lg-6 col-md-12">
               <div class="card">
-                <div class="card-body">
+                <div class="cardd-body">
                   <h5 class="card-title mb-3 mt-3">توفير الوقت والجهد</h5>
                 </div>
               </div>
             </div>
             <div class="col-lg-6 col-md-12">
               <div class="card">
-                <div class="card-body">
+                <div class="cardd-body">
                   <h5 class="card-title mb-3 mt-3">تعزيز الشفافية والشمولية</h5>
                 </div>
               </div>
@@ -294,7 +295,7 @@
 
     <section class="contact" id="contact">
       <h2 class="text-center mb-5 title">تواصل معنا</h2>
-      <div class="container">
+      <div class="container toggleTheme">
         <div class="flexx">
           <div class="form">
             <form action="mailto:mohammadkhaseeb6@gmail.com" method="post">
@@ -313,7 +314,7 @@
           </div>
           <div class="img">
             <img
-              src="./img/get in touch.png"
+              src="./img/contact.png"
               width="600"
               draggable="false"
               alt="Contact us"
@@ -338,15 +339,15 @@
               alt=""
             />
           </div>
+          <span class="copyright text-center"
+            >جميع حقوق النشر محفوظة &copy; 2024</span
+          >
           <div class="social">
             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="whatsapp.html"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
-        <span class="copyright text-center"
-          >جميع حقوق النشر محفوظة &copy; 2024</span
-        >
       </div>
     </footer>
 
@@ -358,6 +359,8 @@
     </span>
     <!-- Scroll To Top  -->
 
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/jquery.nicescroll.min.js"></script>
     <script src="./js/main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

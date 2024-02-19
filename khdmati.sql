@@ -11,6 +11,6 @@ CREATE TABLE `admin` (
 -- Dumping data for table `admin`
 --
 
-INSERT INTO `admin` (`aemail`, `apassword`) VALUES
+INSERT INTO `admin` (`email`, `password`) VALUES
 ('admin@mail.com', '123');
 

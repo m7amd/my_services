@@ -24,6 +24,8 @@ html {
 }
 
 body {
+  background-color: $white;
+  transition: background-color .6s cubic-bezier(.7, 0, .7, 1);  
   font-family: 'Noto Kufi Arabic', sans-serif !important;
   font-size: 1rem;
   line-height: 1.4;
@@ -92,5 +94,45 @@ a {
   }
   &:hover::before {
     transform: scaleX(1);
+  }
+}
+
+// Toggle Themes
+
+.theme {
+  background-color: $dark;
+  .hero {
+    .text {
+      color: $white !important;
+    }
+  }
+  .title {
+    color: $white !important;
+  }
+  .card {
+    border: 0;
+    border-top: 1px solid $white;
+  }
+  .toggleTheme {
+    background-color: $dark !important;
+    box-shadow: 3px 3px 20px rgb(255 255 255 / 20%) !important; 
+  }
+  .card-body {
+    color: $white !important;
+    background-color: $dark !important;
+    h5 {
+      color: $white !important;
+    }
+  }
+  .contact {
+    .form {
+      input, textarea {
+        background-color: $dark !important;
+        color: $white !important;
+        ::placeholder {
+          color: $white !important;
+        }
+      }
+    }
   }
 }

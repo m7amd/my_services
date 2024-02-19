@@ -1,10 +1,17 @@
-.qr {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  margin-top: 100px !important;
-  flex-direction: column;
-  .title {
-    margin-top: 50px !important;
+.whatsapp {
+  background-image: url('../img/wave.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .qr {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 60px !important;
+    flex-direction: column;
+    .titlewhats {
+      margin-top: 50px !important;
+      color: $white !important;
+    }
   }
 }

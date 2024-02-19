@@ -1,5 +1,5 @@
 nav {
-  background-color: $dark;
+  background-color: transparent;
   overflow-x: hidden;
   .nav {
     padding: 1px 10px;  
@@ -39,10 +39,10 @@ nav {
       color: $white;
       transition: .3s;
       &:hover {
-        color: $purple;
+        color: $dark;
         &::after {
           transition: .8s;
-          background-color: $purple;
+          background-color: $dark;
           opacity: 1;
         }
       }

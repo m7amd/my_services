@@ -14,7 +14,7 @@
       flex: 1;
     }
     .social {
-      flex: 3;
+      flex: 1;
       display: flex;
       justify-content: end;
       align-items: center; 
@@ -29,13 +29,11 @@
         }
       }
     }
-  }
-  .copyright {
-    display: flex;
-    justify-content: center;
-    color: $white;
-    font-weight: bold;
-    margin-top: 50px;
+    .copyright {
+      flex: 1;
+      color: $white;
+      font-weight: bold;
+    }
   }
 }
 

@@ -1,15 +1,22 @@
 .hero {
   min-height: calc(100vh - 82px) !important;
-  background-image: url('../img/8.jpg');
-  background-position: center;
+  background-image: url('../img/wave.png');
+  background-position: top;
+  background-repeat: no-repeat;
   background-size: cover;
+  z-index: 99;
   position: relative;
   overflow-x: hidden !important;
+  svg {
+    width: 174%;
+    height: 1127px;
+  }
   .text {
-    color: $white;
+    color: $dark !important;
     position: absolute;
-    right: 17%;
-    bottom: 50%;
+    font-weight: 800 !important;
+    right: 6%;
+    bottom: 35%;
     .boton {
       background-color: $purple;
       border: 1px solid $purple;
