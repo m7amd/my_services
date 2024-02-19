@@ -5,6 +5,7 @@
     background-color: $white;
     box-shadow: 3px 3px 20px rgb(0, 0, 0,0.2);
     .title {
+      font-size: 40px !important;
       &::before {
         left: 45%;
         width: 10%;

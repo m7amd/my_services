@@ -1,5 +1,6 @@
 .about-us {
   .title {
+    font-size: 40px !important;
     &::before {
       left: 47%;
       width: 6%;
@@ -15,25 +16,20 @@
       flex: 1;
     }     
     .text {
-      width: 400px;
       flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      .card {
-        transition: .3s;
-        .cardd-body {
-          justify-content: center;
-          align-self: center;
-          flex: 1 1 auto !important;
-          text-align: center;
-        }
-        &:hover {
-          background-color: $purple;
-          color: $white;
-        }
+      font-size: 18px;
+      line-height: 1.9;
+      .bold {
+        font-weight: bold;
+        font-size: 17px;
+      }
+      .one {
+        display: inline-block;
+        margin: 8px 0;
+      }
+      .two {
+        display: inline-block;
+        margin-bottom: 10px;
       }
     }
   }
