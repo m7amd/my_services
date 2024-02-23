@@ -324,11 +324,11 @@ nav .nav .moon::after {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  margin-top: 60px !important;
   flex-direction: column;
+  gap: 30px;
+  margin-top: 50px !important;
 }
 .whatsapp .qr .titlewhats {
-  margin-top: 50px !important;
   color: #FFF !important;
 }
 
@@ -368,7 +368,7 @@ html {
 body {
   background-color: #FFF;
   transition: background-color 0.6s cubic-bezier(0.7, 0, 0.7, 1);
-  font-family: "Noto Kufi Arabic", sans-serif !important;
+  font-family: "Readex Pro", sans-serif !important;
   font-size: 1rem;
   line-height: 1.4;
 }

@@ -7,10 +7,10 @@
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    margin-top: 60px !important;
     flex-direction: column;
+    gap: 30px;
+    margin-top: 50px !important;
     .titlewhats {
-      margin-top: 50px !important;
       color: $white !important;
     }
   }
