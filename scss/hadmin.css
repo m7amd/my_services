@@ -1,0 +1,138 @@
+body {
+  min-height: calc(100vh - 82px) !important;
+  background-image: url('../img/wave.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 99;
+  position: relative;
+  overflow-x: hidden !important;
+  background-color: #FFF;
+  transition: background-color .6s cubic-bezier(.7, 0, .7, 1);  
+  font-family: "Readex Pro", sans-serif !important;
+  font-size: 1rem;
+  line-height: 1.4;
+  position: relative;
+}
+
+.cppage {
+  overflow: hidden;
+}
+
+.cppage .gridd {
+  display: grid;
+  grid-template-columns: 290px 1fr 100px;
+  grid-template-rows: 1fr;
+  grid-column-gap: 25px;
+  align-items: center;
+}
+
+.cppage .links {
+  flex: 0 0 300px;
+  height: 100vh;
+  padding: 30px;
+  background-color: #7c4ab6;
+}
+
+.cppage .links ul {
+  margin-top: 120px;
+}
+
+.cppage .links ul a {
+  margin-bottom: 40px;
+  color: #FFF;
+  text-decoration: none;
+  display: block;
+  font-size: 19px;
+}
+
+.cppage .content .row .card-body {
+  height: 160px;
+}
+
+.cppage .content .row a {
+  text-decoration: none;
+}
+
+.cppage .content .card {
+  transition: .2s;
+}
+
+.cppage .content .row .card:hover {
+  background-color: #7c4ab6;
+  color: #FFF;
+}
+
+.dmode {
+  position: fixed;
+  top: 50px;
+  left: 150px;
+  color: #FFF;
+  transition: .2s;
+}
+
+.dmode:hover {
+  color: #242526;
+}
+
+.dmode i {
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.logout {
+  position: fixed !important;
+  left: 19px;
+  top: 35px;
+  text-align: center;
+  padding: 0;
+}
+
+.logout img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.logout .btn {
+  border: 0;
+  outline: 0;
+}
+
+.logout .dropdown-menu {
+  text-align: right;
+}
+
+.time {
+  position: fixed !important;
+  left: 130px;
+  bottom: 30px;
+  color: #7c4ab6;
+}
+.time h1 {
+  direction: ltr;
+}
+
+/* Toggle Theme  */
+
+.theme {
+  background-color: #242526;
+}
+.theme .card-body {
+  color: #FFF !important;
+  background-color: #242526 !important;
+}
+.theme .card-body h5 {
+  color: #FFF !important;
+}
+
+.theme .dropdown-menu {
+  background-color: #242526 !important;
+}
+
+.theme .dropdown-item {
+  background-color: #242526 !important;
+  color: #FFF !important;
+}
