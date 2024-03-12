@@ -1,5 +1,5 @@
 body {
-  min-height: calc(100vh - 82px) !important;
+  min-height: 100vh !important;
   background-image: url('../img/wave.png');
   background-position: top;
   background-repeat: no-repeat;
@@ -47,7 +47,7 @@ body {
 }
 
 .cppage .content .row .card-body {
-  height: 160px;
+  height: 175px;
 }
 
 .cppage .content .row a {

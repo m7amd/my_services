@@ -1,0 +1,84 @@
+/* Main Setting  */
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFF;
+  transition: background-color .6s cubic-bezier(.7, 0, .7, 1);  
+  font-family: "Readex Pro", sans-serif !important;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pd {
+  padding: 200px 0;
+}
+
+::selection {
+  color: #FFF;
+  background-color: #7c4ab6;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.head .pic {
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+}
+hr {
+  opacity: 1 !important;
+}
+
+
+.sicone span {
+  font-size: 20px;
+}
+.sicone input {
+  display: inline;
+  width: 400px;
+  outline: none !important;
+}
+.sicone input:focus {
+  box-shadow: 0 0 0 0.25rem #7c4ab696 !important; 
+  border: none !important;   
+}
+.sictwo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sictwo table, tr, td ,thead, tbody {
+  border: 1px solid black !important;
+  font-size: 19px;
+}
+.sictwo input {
+  border: 0;
+  outline: 0;
+}
+.sictwo input:focus {
+  box-shadow: none; 
+  border: none !important;   
+}

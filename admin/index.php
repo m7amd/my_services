@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>لوحة التحكم</title>
-  <link rel="stylesheet" href="../scss/hadmin.css" />
+  <link rel="stylesheet" href="../scss/hadmin.css"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Readex -->
@@ -39,7 +39,7 @@
       <div class="content">
         <div class="row row-gap-4">
           <div class="col-md-6 col-lg-4 mb-3 mb-sm-0">
-            <a href="../pageone.html">
+            <a href="../admin/pageone.html" target="_plank">
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">ابلاغ عن تغيير العنوان</h5>
@@ -53,7 +53,7 @@
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
-            <a href="pagetwo.html">
+            <a href="../admin/pagetwo.html" target="_plank">
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">طلب شهادة خلو من السوابق</h5>
@@ -67,7 +67,7 @@
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
-            <a href="pagethree.html">
+            <a href="../admin/pagethree.html" target="_plank">
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">طلب الحصول على بطاقة هوية</h5>
@@ -80,7 +80,7 @@
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
-            <a href="pagefour.html">
+            <a href="../admin/pagefour.html" target="_plank">
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">طلب استخراج شهادة ميلاد</h5>
@@ -94,12 +94,13 @@
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
-            <a href="pagefive.html">
+            <a href="../admin/pagefive.html" target="_plank">
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">
                     طلب الحصول على جواز السفر الفلسطيني
                   </h5>
+                  <p class="text-danger">* خاص بأهل غزة</p>
                   <p class="card-text">
                     توفر هذه الخدمة إمكانية طلب إصدار جواز سفر فلسطيني رسمي
                     للمواطنين الذين يحق لهم ذلك، وهو وثيقة سفر أساسية للسفر
@@ -110,7 +111,7 @@
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
-            <a href="pagesix.html">
+            <a href="../admin/pagesix.html" target="_plank">
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">بلاغ عن تغيير الحالة الاجتماعية</h5>

@@ -37,3 +37,23 @@ function toggleTheme () {
   localStorage.setItem("mode", "dark");
 
 };
+
+// Type writer effect 
+
+let type = "خدماتي سهلك الخدمات",
+    i = 0;
+
+window.onload = () => {
+  let typeWriter = setInterval(() => {
+
+  document.getElementById("type").innerHTML += type[i];
+  i++;
+
+  if (i > type.length -1) {
+    clearInterval(typeWriter);
+  }
+
+  }, 200);
+}
+
+
