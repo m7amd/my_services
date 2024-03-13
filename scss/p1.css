@@ -52,6 +52,10 @@ hr {
   opacity: 1 !important;
 }
 
+table, tr, td ,thead, tbody {
+  border: 1px solid black !important;
+  font-size: 19px;
+}
 
 .sicone span {
   font-size: 20px;
@@ -70,15 +74,74 @@ hr {
   justify-content: center;
   align-items: center;
 }
-.sictwo table, tr, td ,thead, tbody {
-  border: 1px solid black !important;
-  font-size: 19px;
-}
 .sictwo input {
   border: 0;
   outline: 0;
+  font-size: 17px;
 }
 .sictwo input:focus {
   box-shadow: none; 
   border: none !important;   
+}
+.sicthree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sicthree input {
+  border: 0;
+  outline: 0;
+  width: 535px;
+  display: inline-block;
+  font-size: 17px;
+}
+.sicfour {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.sign {
+  position: relative;
+}
+.sign::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -16px;
+  top: -2px;
+  width: 2px;
+  height: 62px;
+  background-color: black;
+}
+.sicfive {
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.button button {
+  background-color: #7c4ab6;
+  color: #FFF;
+  border: 0;
+  outline: 0;
+  width: 150px;
+  height: 40px;
+  display: block;
+  border-radius: 7px;
+  font-size: 19px;
+  transition: .3s;
+}
+.button button:hover {
+  background-color: transparent;
+  color: #7c4ab6;
+  border: 2px solid #7c4ab6;
 }
