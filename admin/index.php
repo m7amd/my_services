@@ -7,23 +7,11 @@
   <link rel="stylesheet" href="../scss/hadmin.css"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Readex -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet" />
-  <!-- Readex -->
-
-  <!-- Changa Font -->
-
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap" rel="stylesheet"> -->
-
-  <!-- Changa Font -->
-
   <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
 </head>
-
 <body>
   <section class="cppage">
     <div class="gridd">
@@ -39,7 +27,7 @@
       <div class="content">
         <div class="row row-gap-4">
           <div class="col-md-6 col-lg-4 mb-3 mb-sm-0">
-            <a href="../admin/pageone.html" target="_plank">
+            <a href="../admin/pageone.php" target="_plank">
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">ابلاغ عن تغيير العنوان</h5>
@@ -53,7 +41,7 @@
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
-            <a href="../admin/pagetwo.html" target="_plank">
+            <a href="../admin/pagetwo.php" target="_plank">
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">طلب شهادة خلو من السوابق</h5>

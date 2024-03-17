@@ -1,0 +1,124 @@
+/* Main Setting  */
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "Readex Pro", sans-serif !important;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pd {
+  padding: 200px 0;
+}
+
+::selection {
+  color: #FFF;
+  background-color: #7c4ab6;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.head .pic {
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+}
+hr {
+  opacity: 1 !important;
+}
+
+.input {
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid black;
+  margin: 0 7px;
+}
+.title {
+  width: 300px;
+}
+.flexx {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flexx input {
+  display: inline-block;
+  width: 250px;
+}
+.sictwo input{
+  width: 150px;
+}
+
+.free {
+  position: absolute;
+  left: 300px;
+  top: 180px;
+  border: 1px solid black;
+  padding: 30px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.button button {
+  background-color: #7c4ab6;
+  color: #FFF;
+  border: 0;
+  outline: 0;
+  width: 150px;
+  height: 40px;
+  display: block;
+  border-radius: 7px;
+  font-size: 19px;
+  transition: .3s;
+}
+.button button:hover {
+  background-color: transparent;
+  color: #7c4ab6;
+  border: 2px solid #7c4ab6;
+}
+
+@media print {
+  body {
+    margin-top: 5px;
+    margin-left: 10px;
+    /* transform: scale(0.60); */
+    /* transform: translateX(-40px); */
+    transform-origin: 0 0;
+  }
+  .free {
+    top: 100px;
+    left: 70px;
+  }
+  .button {
+    display: none;
+  }
+}

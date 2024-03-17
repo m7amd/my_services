@@ -12,8 +12,6 @@ html {
 }
 
 body {
-  background-color: #FFF;
-  transition: background-color .6s cubic-bezier(.7, 0, .7, 1);  
   font-family: "Readex Pro", sans-serif !important;
   font-size: 1rem;
   line-height: 1.4;
@@ -53,27 +51,33 @@ hr {
 }
 
 table, tr, td ,thead, tbody {
-  border: 1px solid black !important;
-  font-size: 19px;
+  border: 1px solid rgb(114, 113, 113) !important;
+  font-size: 17px;
 }
-
+.sicone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .sicone span {
   font-size: 20px;
+  display: inline-block;
+}
+.sicone div .mr{
+  margin-right: 10px;
 }
 .sicone input {
   display: inline;
   width: 400px;
   outline: none !important;
 }
-.sicone input:focus {
-  box-shadow: 0 0 0 0.25rem #7c4ab696 !important; 
-  border: none !important;   
-}
 .sictwo {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .sictwo input {
   border: 0;
   outline: 0;
@@ -98,9 +102,16 @@ table, tr, td ,thead, tbody {
 }
 .sicfour {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
+}
+.signn {
+  display: flex;
+  gap: 30px; 
+  border: 1px solid black;
+  padding: 2px 5px 20px; 
+  font-size: 15px;
 }
 .sign {
   position: relative;
@@ -111,11 +122,12 @@ table, tr, td ,thead, tbody {
   position: absolute;
   left: -16px;
   top: -2px;
-  width: 2px;
+  width: 1px;
   height: 62px;
   background-color: black;
 }
 .sicfive {
+  margin-right: 80px;
   width: 80px;
   height: 80px;
   border: 1px solid black;
@@ -144,4 +156,39 @@ table, tr, td ,thead, tbody {
   background-color: transparent;
   color: #7c4ab6;
   border: 2px solid #7c4ab6;
+}
+
+
+@media print {
+  body {
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  .sicone div input {
+    width: 300px;
+  }
+  .sictwo {
+    margin-top: 40px !important;
+  }
+  .sictwo table input{
+    width: 130px !important;
+  }
+  .sicfour{
+    gap: 30px;
+    justify-content: space-between;
+  }
+  .sicfour div {
+    flex: 0 0 100px !important;
+  }
+  .signn {
+    gap: 40px; 
+    padding: 2px 20px 20px; 
+  }
+  table, tr, td ,thead, tbody {
+    border: 3px solid rgb(114, 113, 113) !important;
+    font-size: 17px;
+  }
+  .button {
+    display: none;
+  }
 }
