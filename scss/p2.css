@@ -107,13 +107,6 @@ hr {
 }
 
 @media print {
-  body {
-    margin-top: 5px;
-    margin-left: 10px;
-    /* transform: scale(0.60); */
-    /* transform: translateX(-40px); */
-    transform-origin: 0 0;
-  }
   .free {
     top: 100px;
     left: 70px;

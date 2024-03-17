@@ -38,7 +38,7 @@
   ?>
 
   <section class="mt-5">
-    <div class="container">
+    <div class="container-xxl">
       <div class="head">
         <div class="logo">دولة فلسطين <br> وزارة الداخلية</div>
         <div class="pic"></div>
@@ -138,12 +138,12 @@
         <p style="border: 1px solid black; padding: 50px 40px 40px;">طابع بقيمة (3) دنانير</p>
       </div>
     </div>
-    <p class="free">
-      صورة <br> عدد 2
-    </p>
     <div class="button mt-4">
       <button type="button" onclick="window.print();">طباعة</button>
     </div>
+    <p class="free">
+      صورة <br> عدد 2
+    </p>
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

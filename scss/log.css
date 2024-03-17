@@ -44,11 +44,7 @@ a {
   background-color: #7c4ab6;
 }
 
-.cppage {
-  overflow: hidden;
-}
-
-.cppage .gridd {
+.logpage .gridd {
   display: grid;
   grid-template-columns: 290px 1fr 100px;
   grid-template-rows: 1fr;
@@ -56,18 +52,18 @@ a {
   align-items: center;
 }
 
-.cppage .links {
+.logpage .links {
   flex: 0 0 300px;
   height: 100vh;
   padding: 30px;
   background-color: #7c4ab6;
 }
 
-.cppage .links ul {
+.logpage .links ul {
   margin-top: 120px;
 }
 
-.cppage .links ul a {
+.logpage .links ul a {
   margin-bottom: 40px;
   color: #FFF;
   text-decoration: none;
@@ -75,21 +71,8 @@ a {
   font-size: 19px;
 }
 
-.cppage .content .row .card-body {
-  height: 175px;
-}
-
-.cppage .content .row a {
-  text-decoration: none;
-}
-
-.cppage .content .card {
-  transition: .2s;
-}
-
-.cppage .content .row .card:hover {
-  background-color: #7c4ab6;
-  color: #FFF;
+.logpage .content {
+  padding: 20px !important;
 }
 
 .dmode {
@@ -109,59 +92,6 @@ a {
   cursor: pointer;
 }
 
-.logout {
-  position: fixed !important;
-  left: 19px;
-  top: 35px;
-  text-align: center;
-  padding: 0;
-}
-
-.logout img {
-  display: block;
-  width: 60px;
-  height: 60px;
-  text-align: center;
-  border-radius: 50%;
-}
-
-.logout .btn {
-  border: 0;
-  outline: 0;
-}
-
-.logout .dropdown-menu {
-  text-align: right;
-}
-
-.time {
-  position: fixed !important;
-  left: 130px;
-  bottom: 30px;
-  color: #7c4ab6;
-}
-.time h1 {
-  direction: ltr;
-}
-
-/* Toggle Theme  */
-
 .theme {
   background-color: #242526;
-}
-.theme .card-body {
-  color: #FFF !important;
-  background-color: #242526 !important;
-}
-.theme .card-body h5 {
-  color: #FFF !important;
-}
-
-.theme .dropdown-menu {
-  background-color: #242526 !important;
-}
-
-.theme .dropdown-item {
-  background-color: #242526 !important;
-  color: #FFF !important;
 }
