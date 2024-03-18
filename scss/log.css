@@ -74,24 +74,3 @@ a {
 .logpage .content {
   padding: 20px !important;
 }
-
-.dmode {
-  position: fixed;
-  top: 50px;
-  left: 150px;
-  color: #FFF;
-  transition: .2s;
-}
-
-.dmode:hover {
-  color: #242526;
-}
-
-.dmode i {
-  font-size: 35px;
-  cursor: pointer;
-}
-
-.theme {
-  background-color: #242526;
-}

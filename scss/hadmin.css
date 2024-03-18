@@ -165,3 +165,23 @@ a {
   background-color: #242526 !important;
   color: #FFF !important;
 }
+
+
+@media (min-width:992px) and (max-width: 1400px) {
+  .cppage .content .row .card-body {
+    height: 100px !important;
+  }
+  .cppage .content .card-title {
+    font-size: 19px !important;
+  }
+  .cppage .content .text-danger {
+    font-size: 14px !important;
+  }
+  .logout img{
+    width: 50px;
+    height: 50px;
+  }
+  .logout .dropdown-menu {
+    font-size: 13px !important;
+  }
+}

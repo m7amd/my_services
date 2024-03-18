@@ -12,7 +12,7 @@
     .form-control {
       &:focus {
         border-color: $purple !important;
-        box-shadow: 0 0 0 0.25rem #7c4ab696 !important;    
+        box-shadow: 0 0 0 0.25rem $purple !important;    
       }
     }
     .btn {
@@ -21,5 +21,4 @@
       width: 100%;
     }
   }
-  
 }

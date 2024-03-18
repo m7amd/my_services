@@ -16,29 +16,6 @@
 
 <body>
 
-  <?php
-
-  if ($_SERVER["REQUEST_METHOD"] == 'POST') {
-
-    $nic = $_POST['nic'];
-    $full_name = $_POST['full_name'];
-
-    // Database Connection 
-    include('../connection.php');
-
-    $query = "SELECT * FROM 'change_address' WHERE nic='" . $database->real_escape_string($nic) . "' AND full_name='" . $database->real_escape_string($full_name) . "'";
-    $result = $database->query($query);
-    if ($result && $result->num_rows == 1) {
-      // if works
-
-    }
-    $database->close();
-  }
-
-
-  ?>
-
-
   <section class="mt-5">
     <div class="container-xl">
       <div class="head">
@@ -50,9 +27,9 @@
       </div>
       <hr>
       <div class="title text-center">
-        <h2>ابلاغ عن تغير العنوان</h2>
-      </div>
-      <form action="" method="post">
+          <h2>ابلاغ عن تغيير العنوان</h2>
+        </div>
+      <form action="insert.php" method="post">
         <div class="sicone mt-5 text-center">
           <div>
             <span>رقم الهوية</span>
@@ -74,11 +51,11 @@
             </thead>
             <tbody>
               <tr>
-                <td><input type="text" name="fathername" required></td>
-                <td><input type="text" name="grandfathername" required></td>
-                <td><input type="text" name="familyname" required></td>
-                <td><input type="text" name="dob" required></td>
-                <td><input type="text" name="mothername" required></td>
+                <td><input type="text" name="fathername"></td>
+                <td><input type="text" name="grandfathername"></td>
+                <td><input type="text" name="familyname"></td>
+                <td><input type="text" name="dob"></td>
+                <td><input type="text" name="mothername"></td>
               </tr>
               <tr>
                 <td>رقم الخلوي</td>
@@ -138,7 +115,7 @@
             <p>____________________</p>
             <p>ختم وتوقيع الموظف</p>
           </div>
-          <div  class="signn">
+          <div class="signn">
             <p class="sign">البصمة</p>
             <p>توقيع مقدم الطلب</p>
           </div>
@@ -147,7 +124,7 @@
           طابع <br> 5 دنانير
         </div>
         <div class="button mt-2">
-          <button type="button" onclick="window.print();">طباعة</button>
+          <button type="submit" onclick="window.print();">طباعة</button>
         </div>
       </form>
     </div>

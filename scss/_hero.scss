@@ -7,10 +7,67 @@
   z-index: 99;
   position: relative;
   overflow-x: hidden !important;
-  svg {
-    width: 174%;
-    height: 1127px;
-  }
+  nav {
+    background-color: transparent;
+    overflow-x: hidden;
+    .nav {
+      padding: 1px 10px;  
+      .navbar-brand {
+        margin: 0;
+      }
+      .navbar-toggler {
+        background-color: $white;
+        border: none !important;
+        outline: none !important;
+      }
+      .links {
+        justify-content: flex-end;
+        a {
+          color: $white !important;
+          font-weight: bold;
+          font-size: 17px;
+        }
+      }
+      .line {
+        position: relative;
+        left: 0;
+        bottom: -1px;
+        background-color: $white;
+        display: block;
+        width: 2px;
+        z-index: 99;
+        height: 41px;
+      }
+      .moon {
+        display: inline-block;
+        position: relative;
+        top: 9px;
+        right: 100px;
+        font-size: 28px;
+        cursor: pointer;
+        color: $white;
+        transition: .3s;
+        &:hover {
+          color: $dark;
+          &::after {
+            transition: .8s;
+            background-color: $dark;
+            opacity: 1;
+          }
+        }
+        &::after {
+          content: '';
+          background-color: $white;
+          width: 24px;
+          height: 2px;
+          position: absolute;
+          bottom: -3px;
+          left: -2px;
+          opacity: 0;
+        }
+      }
+    }
+  }  
   .text {
     color: $dark !important;
     position: absolute;
@@ -29,10 +86,13 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width:1400px){
   .hero {
     .lead {
       width: 50%;
+    }
+    .text {
+      bottom: 9% !important;
     }
   }
 }

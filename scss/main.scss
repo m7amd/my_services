@@ -27,9 +27,9 @@ body {
   background-color: $white;
   transition: background-color .6s cubic-bezier(.7, 0, .7, 1);  
   font-family: "Readex Pro", sans-serif !important;
-  // font-family: "Changa", sans-serif !important;
   font-size: 1rem;
   line-height: 1.4;
+  overflow-x: hidden;
 }
 
 ul {

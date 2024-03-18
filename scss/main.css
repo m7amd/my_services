@@ -67,10 +67,6 @@ nav .nav .moon::after {
   .line {
     display: none !important;
   }
-  .moon {
-    top: -4px !important;
-    right: 95% !important;
-  }
 }
 .hero {
   min-height: calc(100vh - 82px) !important;
@@ -82,9 +78,66 @@ nav .nav .moon::after {
   position: relative;
   overflow-x: hidden !important;
 }
-.hero svg {
-  width: 174%;
-  height: 1127px;
+.hero nav {
+  background-color: transparent;
+  overflow-x: hidden;
+}
+.hero nav .nav {
+  padding: 1px 10px;
+}
+.hero nav .nav .navbar-brand {
+  margin: 0;
+}
+.hero nav .nav .navbar-toggler {
+  background-color: #FFF;
+  border: none !important;
+  outline: none !important;
+}
+.hero nav .nav .links {
+  justify-content: flex-end;
+}
+.hero nav .nav .links a {
+  color: #FFF !important;
+  font-weight: bold;
+  font-size: 17px;
+}
+.hero nav .nav .line {
+  position: relative;
+  left: 0;
+  bottom: -1px;
+  background-color: #FFF;
+  display: block;
+  width: 2px;
+  z-index: 99;
+  height: 41px;
+}
+.hero nav .nav .moon {
+  display: inline-block;
+  position: relative;
+  top: 9px;
+  right: 100px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #FFF;
+  transition: 0.3s;
+}
+.hero nav .nav .moon:hover {
+  color: #242526;
+}
+.hero nav .nav .moon:hover::after {
+  transition: 0.8s;
+  background-color: #242526;
+  opacity: 1;
+}
+.hero nav .nav .moon::after {
+  content: "";
+  background-color: #FFF;
+  width: 24px;
+  height: 2px;
+  position: absolute;
+  bottom: -3px;
+  left: -2px;
+  opacity: 0;
 }
 .hero .text {
   color: #242526 !important;
@@ -103,9 +156,12 @@ nav .nav .moon::after {
   border: 1px solid #7c4ab6;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1400px) {
   .hero .lead {
     width: 50%;
+  }
+  .hero .text {
+    bottom: 9% !important;
   }
 }
 .services {
@@ -339,6 +395,7 @@ nav .nav .moon::after {
   background-size: cover;
 }
 .formm .loginForm {
+  margin-top: 170px;
   padding: 60px;
   background-color: #FFF;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
@@ -347,7 +404,7 @@ nav .nav .moon::after {
 }
 .formm .loginForm .form-control:focus {
   border-color: #7c4ab6 !important;
-  box-shadow: 0 0 0 0.25rem rgba(124, 74, 182, 0.5882352941) !important;
+  box-shadow: 0 0 0 0.25rem #7c4ab6 !important;
 }
 .formm .loginForm .btn {
   background-color: #7c4ab6 !important;
