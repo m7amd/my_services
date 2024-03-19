@@ -3,10 +3,29 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  .nav {
+    padding: 1px 10px;  
+    .navbar-brand {
+      margin: 0;
+    }
+    .navbar-toggler {
+      background-color: $white;
+      border: none !important;
+      outline: none !important;
+    }
+    .links {
+      justify-content: flex-end;
+      a {
+        color: $white !important;
+        font-weight: bold;
+        font-size: 17px;
+      }
+    }
+  }
   .loginForm {
     padding: 60px;
     background-color: $white;
-    box-shadow: 3px 3px 20px rgb(0, 0, 0,0.2);
+    box-shadow: 3px 3px 20px $purple;
     width: 800px;
     margin: 0 auto;
     .form-control {

@@ -61,8 +61,8 @@ a {
   height: 100vh;
   padding: 30px;
   background-color: #7c4ab6;
+  border-bottom-left-radius: 500px;
 }
-
 .cppage .links ul {
   margin-top: 120px;
 }
@@ -85,11 +85,18 @@ a {
 
 .cppage .content .card {
   transition: .2s;
+  border: 0;
 }
-
-.cppage .content .row .card:hover {
+.cppage .content .card:hover {
   background-color: #7c4ab6;
   color: #FFF;
+}
+.cppage .card-body .img {
+  display: block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 0 auto 20px; 
 }
 
 .dmode {
@@ -147,27 +154,27 @@ a {
 /* Toggle Theme  */
 
 .theme {
-  background-color: #242526;
+  background-color: #121212;
 }
 .theme .card-body {
   color: #FFF !important;
-  background-color: #242526 !important;
+  background-color: #121212 !important;
 }
 .theme .card-body h5 {
   color: #FFF !important;
 }
 
 .theme .dropdown-menu {
-  background-color: #242526 !important;
+  background-color: #121212 !important;
 }
 
 .theme .dropdown-item {
-  background-color: #242526 !important;
+  background-color: #121212 !important;
   color: #FFF !important;
 }
 
 
-@media (min-width:992px) and (max-width: 1400px) {
+@media (min-width:992px) and (max-width: 1399px) {
   .cppage .content .row .card-body {
     height: 100px !important;
   }
@@ -183,5 +190,15 @@ a {
   }
   .logout .dropdown-menu {
     font-size: 13px !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .cppage .content .row .card {
+    width: 477px !important;
+    height: 200px !important;
+    text-align: center;
+    box-shadow: 0px 0px 8px #7c4ab6a6 !important;
+    border-radius: 50px !important;
   }
 }

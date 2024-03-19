@@ -1,73 +1,3 @@
-nav {
-  background-color: transparent;
-  overflow-x: hidden;
-}
-nav .nav {
-  padding: 1px 10px;
-}
-nav .nav .navbar-brand {
-  margin: 0;
-}
-nav .nav .navbar-toggler {
-  background-color: #FFF;
-  border: none !important;
-  outline: none !important;
-}
-nav .nav .links {
-  justify-content: flex-end;
-}
-nav .nav .links a {
-  color: #FFF !important;
-  font-weight: bold;
-  font-size: 17px;
-}
-nav .nav .line {
-  position: relative;
-  left: 0;
-  bottom: -1px;
-  background-color: #FFF;
-  display: block;
-  width: 2px;
-  z-index: 99;
-  height: 41px;
-}
-nav .nav .moon {
-  display: inline-block;
-  position: relative;
-  top: 9px;
-  right: 100px;
-  font-size: 28px;
-  cursor: pointer;
-  color: #FFF;
-  transition: 0.3s;
-}
-nav .nav .moon:hover {
-  color: #242526;
-}
-nav .nav .moon:hover::after {
-  transition: 0.8s;
-  background-color: #242526;
-  opacity: 1;
-}
-nav .nav .moon::after {
-  content: "";
-  background-color: #FFF;
-  width: 24px;
-  height: 2px;
-  position: absolute;
-  bottom: -3px;
-  left: -2px;
-  opacity: 0;
-}
-
-@media (max-width: 991px) {
-  .links {
-    padding-top: 30px;
-  }
-  .line {
-    display: none !important;
-  }
-}
 .hero {
   min-height: calc(100vh - 82px) !important;
   background-image: url("../img/wave.png");
@@ -116,17 +46,17 @@ nav .nav .moon::after {
   position: relative;
   top: 9px;
   right: 100px;
-  font-size: 28px;
+  font-size: 37px;
   cursor: pointer;
   color: #FFF;
   transition: 0.3s;
 }
 .hero nav .nav .moon:hover {
-  color: #242526;
+  color: #121212;
 }
 .hero nav .nav .moon:hover::after {
   transition: 0.8s;
-  background-color: #242526;
+  background-color: #121212;
   opacity: 1;
 }
 .hero nav .nav .moon::after {
@@ -140,20 +70,22 @@ nav .nav .moon::after {
   opacity: 0;
 }
 .hero .text {
-  color: #242526 !important;
+  color: #121212 !important;
   position: absolute;
   font-weight: 800 !important;
   right: 6%;
   bottom: 35%;
 }
-.hero .text .boton {
-  background-color: #7c4ab6;
-  border: 1px solid #7c4ab6;
+.hero .img {
+  position: absolute;
+  left: 200px;
+  top: 200px;
+}
+.hero .img img {
   transition: 0.3s;
 }
-.hero .text .boton:hover {
-  background-color: transparent;
-  border: 1px solid #7c4ab6;
+.hero .img img:hover {
+  transform: scale(1.1);
 }
 
 @media (min-width: 992px) and (max-width: 1400px) {
@@ -168,13 +100,13 @@ nav .nav .moon::after {
   overflow: hidden;
 }
 .services .title {
-  color: #242526 !important;
+  color: #121212 !important;
   font-size: 40px !important;
 }
 .services .container {
   padding: 60px;
   background-color: #FFF;
-  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 20px #7c4ab6;
 }
 .services .container .row {
   gap: 60px 0 !important;
@@ -237,7 +169,7 @@ nav .nav .moon::after {
 .adv .container {
   padding: 60px;
   background-color: #FFF;
-  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 20px #7c4ab6;
 }
 .adv .container .title {
   font-size: 40px !important;
@@ -283,7 +215,7 @@ nav .nav .moon::after {
 .contact .container {
   padding: 60px;
   background-color: #FFF;
-  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 20px #7c4ab6;
 }
 .contact .container .flexx {
   display: flex;
@@ -307,7 +239,7 @@ nav .nav .moon::after {
   margin-bottom: 20px;
   border-radius: 8px;
   resize: none;
-  color: #242526;
+  color: #121212;
 }
 .contact .container .flexx .form form button {
   background-color: #7c4ab6 !important;
@@ -328,7 +260,7 @@ nav .nav .moon::after {
 }
 .footer {
   overflow: hidden;
-  background-color: #242526;
+  background-color: #121212;
   margin-top: 150px;
   padding: 40px;
 }
@@ -376,6 +308,25 @@ nav .nav .moon::after {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.whatsapp .nav {
+  padding: 1px 10px;
+}
+.whatsapp .nav .navbar-brand {
+  margin: 0;
+}
+.whatsapp .nav .navbar-toggler {
+  background-color: #FFF;
+  border: none !important;
+  outline: none !important;
+}
+.whatsapp .nav .links {
+  justify-content: flex-end;
+}
+.whatsapp .nav .links a {
+  color: #FFF !important;
+  font-weight: bold;
+  font-size: 17px;
+}
 .whatsapp .qr {
   display: flex !important;
   justify-content: center !important;
@@ -394,11 +345,29 @@ nav .nav .moon::after {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.formm .nav {
+  padding: 1px 10px;
+}
+.formm .nav .navbar-brand {
+  margin: 0;
+}
+.formm .nav .navbar-toggler {
+  background-color: #FFF;
+  border: none !important;
+  outline: none !important;
+}
+.formm .nav .links {
+  justify-content: flex-end;
+}
+.formm .nav .links a {
+  color: #FFF !important;
+  font-weight: bold;
+  font-size: 17px;
+}
 .formm .loginForm {
-  margin-top: 170px;
   padding: 60px;
   background-color: #FFF;
-  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 20px #7c4ab6;
   width: 800px;
   margin: 0 auto;
 }
@@ -428,6 +397,7 @@ body {
   font-family: "Readex Pro", sans-serif !important;
   font-size: 1rem;
   line-height: 1.4;
+  overflow-x: hidden;
 }
 
 ul {
@@ -501,7 +471,7 @@ a {
 }
 
 .theme {
-  background-color: #242526;
+  background-color: #121212;
 }
 .theme .hero .text {
   color: #FFF !important;
@@ -514,18 +484,18 @@ a {
   border-top: 1px solid #FFF;
 }
 .theme .toggleTheme {
-  background-color: #242526 !important;
-  box-shadow: 3px 3px 20px rgba(255, 255, 255, 0.2) !important;
+  background-color: #121212 !important;
+  box-shadow: 0px 0 22px -4px rgba(124, 74, 182, 0.61) !important;
 }
 .theme .card-body {
   color: #FFF !important;
-  background-color: #242526 !important;
+  background-color: #121212 !important;
 }
 .theme .card-body h5 {
   color: #FFF !important;
 }
 .theme .contact .form input, .theme .contact .form textarea {
-  background-color: #242526 !important;
+  background-color: #121212 !important;
   color: #FFF !important;
 }
 .theme .contact .form input ::-moz-placeholder, .theme .contact .form textarea ::-moz-placeholder {

@@ -1,5 +1,5 @@
 # Khadamti
 
-A new Web application.
+A New Web Application.
 
-![alt text](./design/d1.PNG)
+![alt text](./design/dashboard.PNG)

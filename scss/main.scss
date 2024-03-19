@@ -1,6 +1,5 @@
 // Files
 @import 'colors';
-@import 'nav';
 @import 'hero';
 @import 'services';
 @import 'about-us';
@@ -116,7 +115,7 @@ a {
   }
   .toggleTheme {
     background-color: $dark !important;
-    box-shadow: 3px 3px 20px rgb(255 255 255 / 20%) !important; 
+    box-shadow: 0px 0 22px -4px rgb(124 74 182 / 61%) !important 
   }
   .card-body {
     color: $white !important;

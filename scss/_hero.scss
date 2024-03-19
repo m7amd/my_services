@@ -43,7 +43,7 @@
         position: relative;
         top: 9px;
         right: 100px;
-        font-size: 28px;
+        font-size: 37px;
         cursor: pointer;
         color: $white;
         transition: .3s;
@@ -74,13 +74,15 @@
     font-weight: 800 !important;
     right: 6%;
     bottom: 35%;
-    .boton {
-      background-color: $purple;
-      border: 1px solid $purple;
+  }
+  .img {
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    img {
       transition: .3s;
       &:hover {
-        background-color: transparent;
-        border: 1px solid $purple;
+        transform: scale(1.1);
       }
     }
   }

@@ -29,8 +29,9 @@
           <div class="col-md-6 col-lg-4 mb-3 mb-sm-0">
             <a href="../admin/pageone.php" target="_plank">
               <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">ابلاغ عن تغيير العنوان</h5>
+                <div class="card-body text-center">
+                <img src="../img/1.jpg" draggable="false" class="img" alt="">
+                  <h5 class="card-title" title="ابلاغ عن تغيير العنوان">ابلاغ عن تغيير العنوان</h5>
                 </div>
               </div>
             </a>
@@ -38,8 +39,9 @@
           <div class="col-md-6 col-lg-4">
             <a href="../admin/pagetwo.php" target="_plank">
               <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">طلب شهادة خلو من السوابق</h5>
+                <div class="card-body text-center">
+                <img src="../img/5.jpg" draggable="false" class="img" alt="">
+                  <h5 class="card-title" title="طلب شهادة خلو من السوابق">طلب شهادة خلو من السوابق</h5>
                 </div>
               </div>
             </a>
@@ -48,7 +50,8 @@
             <a href="../admin/pagethree.html" target="_plank">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">طلب الحصول على بطاقة هوية</h5>
+                <img src="../img/3.jpg" draggable="false" class="img" alt="">
+                  <h5 class="card-title" title="طلب الحصول على بطاقة الهوية">طلب الحصول على بطاقة هوية</h5>
                 </div>
               </div>
             </a>
@@ -57,7 +60,8 @@
             <a href="../admin/pagefour.html" target="_plank">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">طلب استخراج شهادة ميلاد</h5>
+                <img src="../img/4.jpg" draggable="false" class="img" alt="">
+                  <h5 class="card-title" title="طلب استخراج شهادة ميلاد">طلب استخراج شهادة ميلاد</h5>
                 </div>
               </div>
             </a>
@@ -66,10 +70,11 @@
             <a href="../admin/pagefive.html" target="_plank">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">
+                <img src="../img/2.jpg" draggable="false" class="img" alt="">
+                  <h5 class="card-title" title="طلب الحصول على جواز السفر الفلسطيني">
                     طلب الحصول على جواز السفر الفلسطيني
+                    <p class="text-danger mt-3" style="font-family: normal;">* خاص بأهل غزة</p>
                   </h5>
-                  <p class="text-danger">* خاص بأهل غزة</p>
                 </div>
               </div>
             </a>
@@ -78,7 +83,8 @@
             <a href="../admin/pagesix.html" target="_plank">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">بلاغ عن تغيير الحالة الاجتماعية</h5>
+                <img src="../img/6.jpg" draggable="false" class="img" alt="">
+                  <h5 class="card-title" title="ابلاغ عن تغيير الحالة الاجتماعية">بلاغ عن تغيير الحالة الاجتماعية</h5>
                 </div>
               </div>
             </a>

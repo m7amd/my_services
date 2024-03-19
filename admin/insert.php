@@ -1,19 +1,26 @@
 <?php
-  include('../connection.php');
+if(isset($_POST['full_name']) && isset($_POST['nic']) && isset($_POST['page_title'])) {
+    include('../connection.php');
 
-  if ($_POST) {
     $full_name = $_POST['full_name'];
     $nic = $_POST['nic'];
-  }
+    $service_name = $_POST['page_title'];
 
-  $sql = "INSERT INTO `log`(`full_name`, `nic`) VALUES ('$full_name','$nic'),
-  INSERT INTO 'log' ('service_name') VALUES ('ابلاغ عن تغيير العنوان');";
+    $full_name = $database->real_escape_string($full_name);
+    $nic = $database->real_escape_string($nic);
+    $service_name = $database->real_escape_string($service_name);
 
-  // Execute the SQL INSERT statement
-  if ($database->query($sql) === TRUE) {
-    echo "";
-  } else {
-    echo "Error: " . $sql . "<br>" . $database->error;
-  }
-  $database->close();
+    $sql = "INSERT INTO `log`(`full_name`, `nic`, `service_name`) VALUES ('$full_name','$nic','$service_name')";
+
+    if ($database->query($sql) === TRUE) {
+        // back to the previous page 
+        header("Location: " . $_SERVER['HTTP_REFERER']);
+    } else {
+        echo "Error: " . $sql . "<br>" . $database->error;
+    }
+
+    $database->close();
+} else {
+    echo "Error: Form data is not submitted.";
+}
 ?>
