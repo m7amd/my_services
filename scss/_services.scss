@@ -3,6 +3,10 @@
   .title {
     color: $dark !important;
     font-size: 40px !important;
+    &::before {
+      left: 44%;
+      width: 12%;
+    }
   }
   .container {
     padding: 60px;

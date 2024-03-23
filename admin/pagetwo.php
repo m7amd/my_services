@@ -13,22 +13,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet" />
   <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
 </head>
-<style>
-  @media print {
-    body {
-      font-size: 12pt;
-      line-height: 1.5;
-    }
-  }
-</style>
-
 <body>
 
   <section class="mt-5">
     <div class="container-xxl">
       <div class="head">
         <div class="logo">دولة فلسطين <br> وزارة الداخلية</div>
-        <div class="pic"></div>
+        <div class="pic"><img src="../img/Palestine_authority_logo.jpg" draggable="false" alt=""></div>
         <div class="logo-en">
           state of palestine <br> ministry of interior
         </div>

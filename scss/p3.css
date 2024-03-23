@@ -26,13 +26,8 @@ a {
   text-decoration: none;
 }
 
-.pd {
-  padding: 200px 0;
-}
-
-::selection {
-  color: #FFF;
-  background-color: #7c4ab6;
+p {
+  margin: 0 !important;
 }
 
 .head {
@@ -45,8 +40,267 @@ a {
 .head .pic {
   width: 70px;
   height: 70px;
-  border: 1px solid black;
+}
+.head .pic img {
+  filter: grayscale();
+  width: 100%;
 }
 hr {
   opacity: 1 !important;
+}
+form {
+  border: 1px solid black;
+}
+
+.flexx {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+.flexx p {
+  position: relative;
+}
+.flexx p::before {
+  content: '';
+  position: absolute;
+  right: -19px;
+  top: 0;
+  background-color: black;
+  width: 1px;
+  height: 40px;
+}
+.flexx p::after {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 0;
+  background-color: black;
+  width: 1px;
+  height: 40px;
+}
+
+.flexx .check input {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.flex2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+
+.flex2 input {
+  width: 360px;
+}
+.flex2 p:first-child {
+  position: relative;
+}
+.flex2 p:first-child::before {
+  content: '';
+  position: absolute;
+  right: -20px;
+  top: -27px;
+  background-color: black;
+  width: 1px;
+  height: 70px;
+}
+.flex2 p:first-child::after {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: -27px;
+  background-color: black;
+  width: 1px;
+  height: 70px;
+}
+.flex3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+.flex3 p {
+  position: relative;
+}
+.flex3 p::before {
+  content: '';
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  background-color: black;
+  width: 1px;
+  height: 62px;
+}
+.flex3 p::after {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  background-color: black;
+  width: 1px;
+  height: 62px;
+}
+.flex3 p:nth-child(3)::before {
+  right: -55px;
+}
+.flex3 p:nth-child(5)::before {
+  right: -55px;
+}
+
+.flex4 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+.flex4 p {
+  position: relative;
+}
+.flex4 p::before {
+  content: '';
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  background-color: black;
+  width: 1px;
+  height: 62px;
+}
+.flex4 p::after {
+  content: '';
+  position: absolute;
+  left: -27px;
+  top: -20px;
+  background-color: black;
+  width: 1px;
+  height: 62px;
+}
+.flex4 p:nth-child(3)::before {
+  right: -55px;
+}
+.flex4 p:nth-child(5)::before {
+  right: -55px;
+  top: -30px;
+}
+.flex4 p:nth-child(5)::after {
+  top: -30px;
+}
+.flex5 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+.flex5 p {
+  position: relative;
+}
+.flex5 p::before {
+  content: '';
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  background-color: black;
+  width: 1px;
+  height: 62px;
+}
+.flex5 p::after {
+  content: '';
+  position: absolute;
+  left: -27px;
+  top: -20px;
+  background-color: black;
+  width: 1px;
+  height: 62px;
+}
+.flex5 p:nth-child(3)::before {
+  right: -70px;
+}
+.flex5 p:nth-child(5)::before {
+  right: -70px;
+  top: -20px;
+}
+.flex5 p:nth-child(5)::after {
+  top: -20px;
+}
+
+.flex6 {
+  display: flex;
+  align-items: center;
+}
+.flex6 div:not(:last-child) {
+  border: 1px solid black;
+  width: 180px;
+  height: 180px;
+  text-align: center;
+  line-height: 30px;
+}
+.flex6 div:nth-child(4) {
+  margin-left: 450px;
+}
+.flex6 i {
+  font-size: 100px;
+}
+.sicfour {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.signn {
+  display: flex;
+  gap: 30px; 
+  border: 1px solid black;
+  padding: 2px 5px 37px; 
+  font-size: 15px;
+}
+.sign {
+  position: relative;
+}
+.sign::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -16px;
+  top: -2px;
+  width: 1px;
+  height: 62px;
+  background-color: black;
+}
+.sicfive {
+  margin-right: 80px;
+  width: 200px;
+  height: 80px;
+  border: 1px solid black;
+  text-align: center;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.button button {
+  background-color: #7c4ab6;
+  color: #FFF;
+  border: 0;
+  outline: 0;
+  width: 150px;
+  height: 40px;
+  display: block;
+  border-radius: 7px;
+  font-size: 19px;
+  transition: .3s;
+}
+.button button:hover {
+  background-color: transparent;
+  color: #7c4ab6;
+  border: 2px solid #7c4ab6;
+}
+
+@media print {
+  .button {
+    display: none;
+  }
 }

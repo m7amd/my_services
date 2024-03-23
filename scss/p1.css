@@ -25,15 +25,6 @@ a {
   text-decoration: none;
 }
 
-.pd {
-  padding: 200px 0;
-}
-
-::selection {
-  color: #FFF;
-  background-color: #7c4ab6;
-}
-
 .head {
   display: flex;
   justify-content: space-between;

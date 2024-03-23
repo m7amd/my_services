@@ -75,17 +75,17 @@ a {
   font-size: 19px;
 }
 
-.cppage .content .row .card-body {
-  height: 175px;
-}
-
 .cppage .content .row a {
   text-decoration: none;
 }
-
 .cppage .content .card {
   transition: .2s;
   border: 0;
+  width: 477px !important;
+  height: 200px !important;
+  text-align: center;
+  box-shadow: 0px 0px 8px #7c4ab6a6 !important;
+  border-radius: 50px !important;
 }
 .cppage .content .card:hover {
   background-color: #7c4ab6;
@@ -156,7 +156,7 @@ a {
 .theme {
   background-color: #121212;
 }
-.theme .card-body {
+.theme .card {
   color: #FFF !important;
   background-color: #121212 !important;
 }
@@ -175,30 +175,16 @@ a {
 
 
 @media (min-width:992px) and (max-width: 1399px) {
-  .cppage .content .row .card-body {
-    height: 100px !important;
+  .cppage .content .card {
+    width: 277px !important;
+    height: 190px !important;
   }
-  .cppage .content .card-title {
-    font-size: 19px !important;
+  .cppage .content .card .img {
+    width: 70px;
+    height: 70px;
   }
-  .cppage .content .text-danger {
-    font-size: 14px !important;
-  }
-  .logout img{
-    width: 50px;
-    height: 50px;
-  }
-  .logout .dropdown-menu {
-    font-size: 13px !important;
+  .cppage .content .card .card-title {
+    font-size: 18px;
   }
 }
 
-@media (min-width: 1400px) {
-  .cppage .content .row .card {
-    width: 477px !important;
-    height: 200px !important;
-    text-align: center;
-    box-shadow: 0px 0px 8px #7c4ab6a6 !important;
-    border-radius: 50px !important;
-  }
-}

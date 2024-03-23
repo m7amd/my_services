@@ -88,13 +88,20 @@
   }
 }
 
-@media (min-width: 992px) and (max-width:1400px){
+@media (min-width: 992px) and (max-width:1399px){
   .hero {
     .lead {
       width: 50%;
     }
     .text {
       bottom: 9% !important;
+    }
+    .hero-section {
+      .img {
+        img {
+          width: 400px !important;
+        }
+      }
     }
   }
 }

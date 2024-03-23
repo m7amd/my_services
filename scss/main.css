@@ -88,12 +88,15 @@
   transform: scale(1.1);
 }
 
-@media (min-width: 992px) and (max-width: 1400px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   .hero .lead {
     width: 50%;
   }
   .hero .text {
     bottom: 9% !important;
+  }
+  .hero .hero-section .img img {
+    width: 400px !important;
   }
 }
 .services {
@@ -102,6 +105,10 @@
 .services .title {
   color: #121212 !important;
   font-size: 40px !important;
+}
+.services .title::before {
+  left: 44%;
+  width: 12%;
 }
 .services .container {
   padding: 60px;
@@ -124,11 +131,11 @@
   }
 }
 .about-us .title {
-  font-size: 40px !important;
+  font-size: 60px !important;
 }
 .about-us .title::before {
-  left: 47%;
-  width: 6%;
+  left: 44%;
+  width: 12%;
 }
 .about-us .flexx {
   display: flex;
@@ -211,6 +218,10 @@
 }
 .contact .title {
   font-size: 40px !important;
+}
+.contact .title::before {
+  left: 41%;
+  width: 18%;
 }
 .contact .container {
   padding: 60px;

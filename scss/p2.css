@@ -26,15 +26,6 @@ a {
   text-decoration: none;
 }
 
-.pd {
-  padding: 200px 0;
-}
-
-::selection {
-  color: #FFF;
-  background-color: #7c4ab6;
-}
-
 .head {
   display: flex;
   justify-content: space-between;
@@ -45,7 +36,10 @@ a {
 .head .pic {
   width: 70px;
   height: 70px;
-  border: 1px solid black;
+}
+.head .pic img {
+  filter: grayscale();
+  width: 100%;
 }
 hr {
   opacity: 1 !important;
