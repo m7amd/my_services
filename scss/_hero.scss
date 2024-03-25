@@ -88,6 +88,7 @@
   }
 }
 
+// Laptops
 @media (min-width: 992px) and (max-width:1399px){
   .hero {
     .lead {
@@ -100,6 +101,52 @@
       .img {
         img {
           width: 400px !important;
+        }
+      }
+    }
+  }
+}
+
+// Phones 
+@media (min-width: 57px) and (max-width: 767px) {
+  .hero {
+    nav {
+      .links {
+        padding-top: 20px !important;
+      }
+      .line {
+        display: none !important;
+      }
+      .moon {
+        right: 368px !important;
+      }
+      .navbar-toggler {
+        &:focus {
+          border: 1px solid red;
+        }
+      }
+    }
+    .hero-section {
+      .text {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        padding-right: 15px !important;
+        h2 {
+          font-size: 30px !important;
+          margin-top: 215px !important;
+        }
+        h4 {
+          margin-bottom: 45px !important;
+        }
+      }
+      .img {
+        position: relative;
+        left: 0;
+        top: 0;
+        text-align: center;
+        img {
+          width: 80%;
         }
       }
     }

@@ -41,3 +41,18 @@
     }
   }
 }
+
+// Phones 
+@media (min-width: 57px) and (max-width: 767px) {
+  .formm {
+    nav {
+      .links {
+        padding-top: 28px;
+      }
+    }
+    .loginForm {
+      width: 100% !important;
+      height: 500px;
+    }
+  }
+}

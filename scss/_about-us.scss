@@ -1,6 +1,6 @@
-.about-us {
+.about-us {overflow-x: hidden;
   .title {
-    font-size: 60px !important;
+    font-size: 40px !important;
     &::before {
       left: 44%;
       width: 12%;
@@ -35,11 +35,18 @@
   }
 }
 
-
-@media (max-width: 767px) {
+// Phones
+@media (min-width: 57px) and (max-width: 767px) {
   .about-us {
-    .card {
-      width: 200px !important;
+    .title {
+      font-size: 35px !important;
+      &::before {
+        left: 37%;
+        width: 26%;
+      }
+    }
+    .flexx {
+      flex-direction: column;
     }
   }
 }

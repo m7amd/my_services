@@ -1,15 +1,15 @@
 .footer {
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: $dark;
   margin-top: 150px;
   padding: 40px;
   .flexx {
-    text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     gap: 50px;
+    text-align: center;
     .logo {
       flex: 1;
     }
@@ -37,11 +37,11 @@
   }
 }
 
-
-@media (max-width:576px) {
+// Phones
+@media (min-width: 57px) and (max-width: 767px) {
   .footer {
-    .social {
-      justify-content: center;
+    .flexx {
+      flex-direction: column;
     }
   }
 }

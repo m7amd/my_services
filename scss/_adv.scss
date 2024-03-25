@@ -37,10 +37,21 @@
     }
   }  
 }
-
-@media (min-width: 576px) and (max-width: 991px) {
+// Phones
+@media (min-width: 57px) and (max-width: 767px) {
   .adv {
+    .title {
+      font-size: 35px !important;
+      &::before {
+        left: 36%;
+        width: 28%;
+      }
+    }
     .container {
+      .row {
+        margin-top: 0 !important;
+        gap: 15px !important;
+      }
       .card-body {
         flex: 1 1 auto !important;
         .card-text {

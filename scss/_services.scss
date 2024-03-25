@@ -23,11 +23,23 @@
     }
   }
 }
-
+// Phones
 @media (min-width: 57px) and (max-width: 767px) {
   .services {
-    .card-body {
-      flex: 1 1 auto !important;
+    .title {
+      font-size: 35px !important;
+      &::before {
+        left: 36%;
+        width: 27%;
+      }
+    }
+    .container {
+      .row {
+        gap: 15px !important;
+        .card-body {
+          flex: 1 1 auto !important;
+        }
+      }
     }
   }  
 }
